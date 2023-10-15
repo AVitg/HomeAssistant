@@ -6,6 +6,12 @@ blueprint:
     motion_sensor:
       name: Motion Sensor
       description: This sensor will be synchronized with the light.
+      selector:
+        entity:
+          filter:
+            device_class: motion
+            domain: binary_sensor
+
       
     target_light:
       name: Lights
